@@ -34,7 +34,7 @@ p {
 @media (min-width: 768px) {
   p {
     margin: 0 0 35px;
-    font-size: 20px;
+    font-size: 22px;
     line-height: 1.6;
   }
 }
@@ -44,6 +44,10 @@ a {
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
+a.text-link {
+  text-decoration: underline;
+}
+
 a:hover,
 a:focus {
   text-decoration: none;
@@ -264,10 +268,23 @@ p .entry-heading {
   text-shadow: 1px 1px #070707;
 }
 
-p.entry-header {
+.entry-header {
     color: #42DCA3;
     font-size: 175%;
     margin-bottom: 10px;
+}
+
+ul {
+    font-size: 160%;
+}
+
+li {
+    font-size: 90%;
+    margin-bottom: 10px;
+}
+
+.emphasize {
+    color: #42DCA3;
 }
 
 @media (min-width: 767px) {

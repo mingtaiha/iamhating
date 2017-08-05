@@ -69,9 +69,6 @@
                         <a class="page-scroll" href="#experience">Experience</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#projects">Projects</a>
-                    </li>
-                    <li>
                         <a class="page-scroll" href="misc_files/resume_mingtaiha.pdf">Resume</a>
                     </li>
                 </ul>
@@ -109,10 +106,10 @@
                 <p>A Picture</p> 
             </div>
             <div class="col-lg-6 text-left">
-                <p>Hey there, I'm Ming! I'm a graduate student studying Computer Engineering at <a class="text-link" href="http://www.ece.rutgers.edu/">Rutgers University</a>. I also work as a developer for <a class="text-link" href="http://oss.rutgers.edu/">Rutgers OSS</a>Outside of my research, you can find me working on projects I find meani.ngful, or you can find me watching cooking videos.
-                </p>
+                <p>Hey there, I'm Ming! I'm a graduate student studying Computer Engineering at <a class="text-link" href="http://www.ece.rutgers.edu/">Rutgers University</a>. I also work as a developer for <a class="text-link" href="http://oss.rutgers.edu/">Rutgers OSS</a>. Outside of my research, you can find me working on projects I find meaningful, or you can find me watching cooking videos.</p>
                 <br>
                 <p><a class="text-link" href="https://www.youtube.com/watch?v=5uXIPhxL5XA">Gordon Ramsay</a> is my spirit animal.</p>
+                <p><span class="emphasize">Skills: </span>Python, C/C++, JavaScript, HTML/CSS, Bash, Docker, Git, Phabricator, MongoDB, MySQL</p>
             </div>
         </div>
     </section>
@@ -122,11 +119,26 @@
             <h1 class="section-title experience-title">Experience</h1>
         </div>
         <div class="container content-section">
-            <h1>Jobs</h1>
+            <h1>Work</h1>
                 <div class="row">
-                <div class="col-lg-3">
+                <div class="col-lg-3 text-right">
+                    <p class="entry-header"><a class="text-link" href="http://oss.rutgers.edu/">Rutgers OSS</a>
+                    <p>07/2017 - Present</p>
                 </div>
-                <div class="col-lg-9">
+                <div class="col-lg-9 text-left">
+                    <p class="entry-header text-right">Student Systems Programmer</p>
+                    <ul class="entry-list">
+                        <li>Design and deploy a URL shortener with team using Flask, MySQL, Git/Phabricator for the Rutgers Community
+                        </li>
+                        <li>Create and deploy Docker containers to host Wordpress on NGINX for Rutgers faculty and staff
+                        </li>
+                        <li>Collaborate with team to build RPM pacakges and open source software used by 70k faculty &amp; students
+                        </li>
+                        <li>Diagnose and resolve system/application on *NIX servers in the Koji build enviornment, provisioned by Salt
+                        </li>
+                        <li>Write and maintain scripts to automate system administration tasks on *NIX servers
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -140,9 +152,13 @@
                     <div class="col-lg-9 text-left">
                         <p class="entry-header text-right">Graduate Researcher</p>
                         <ul class="entry-list">
-                            <li>Developing an original framework which enables users to select resources (HPC, HTC, Cloud) over which to distribute a workflow
+                            <li>Developed a model to estimate task execution times on unknown resources using information from known resources
+                            </li>
+                            <li>Developed a model which enables users to select resources (HPC, HTC, Cloud) over which to distribute a workflow
                             </li>
                             <li>Characterized task placement strategies that minimize time-to-completion of workloads distrubted across HPC and HTC resources
+                            </li>
+                            <li>Extended AIMES middleware to support execution on OSG
                             </li>
                             <li>Incorporated pilot-job functionalities into <a class="text-link" href="http://dare.cct.lsu.edu/">DARE-NGS</a> to support the distributed execution RNA-sequencing workflows across XSEDE HPCs and Amazon EC2
                             </li>
@@ -167,14 +183,49 @@
                     </div>
                 </div>
         </div>
+<!---
     </section>
 
     <section id="projects" class="content-section text-center">
         <div class="section-header projects-header">
             <h1 class="setion-title projects-title">Projects</h1>
         </div>
+-->
         <div class="container content-section">
-            <div class="row">
+            <h1>Projects</h1>
+            <div class="row content-subsection">
+                <div class="col-lg-3 text-right">
+                    <p class="entry-header"><a class="text-link" href="https://github.com/mingtaiha/n.ai">Nutrition AI</a></p>
+                </div>
+                <div class="col-lg-9 text-left">
+                    <ul>
+                        <li>Developed a suite of composable Slackbots to recommend recipes, purchase ingredients, and plan routes
+                        </li>
+                        <li>Integrated API.ai with Slackbots to enable natural language conversation
+                        </li>
+                        <li>Developed a custom machine learning algorithm to account for variety in recipe recommended to users
+                        </li>
+                        <li>Implemented a Flask application that exposed endpoints for our services to interact with the recipes database
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row content-subsection">
+                <div class="col-lg-3 text-right">
+                    <p class="entry-header"><a class="text-link" href="https://github.com/mingtaiha/cs518_os_projects">OS Projects</a></p>
+                </div>
+                <div class="col-lg-9 text-left">
+                    <ul>
+                        <li>Implemented basic functionality of pthreads and malloc (dlmalloc) in C
+                        </li>
+                        <li>Developed scheduler using a multi-level priority queue to schedule threads created the above pthreads library
+                        </li>
+                        <li>Developed memory manager to virtualize memory allocated to threads using the above malloc library
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row content-subsection">
                 <div class="col-lg-3 text-right">
                     <p class="entry-header"><a class="text-link" href="https://github.com/mingtaiha/HealthAnalytics">HealthAnalytics</a></p>
                 </div>
@@ -184,7 +235,9 @@
                         </li>
                         <li>Created model to predict Cholesterol Levels, Blood Pressure, and Heart Rate of users (75% accurate within one STDEV)
                         </li>
-                        <li>Managed development of backend components and contributions to Product Requirements Document
+                        <li>Managed development and integration of backend components
+                        </li>
+                        <li>Created a 100+ page Product Requirements Document and presentations with team
                         </li>
                     </ul>
                 </div>
@@ -219,11 +272,7 @@
 
     <!-- Footer -->
     <footer>
-        <div class="container text-center">
-            <p>Copyright &copy; Your Website 2016</p>
-        </div>
     </footer>
-
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.js"></script>
 

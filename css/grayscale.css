@@ -283,6 +283,10 @@ li {
     margin-bottom: 10px;
 }
 
+ul .sublist{
+    font-size: 100%;
+}
+
 .emphasize {
     color: #42DCA3;
 }
